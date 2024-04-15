@@ -37,7 +37,7 @@ class _SubwayScreenState extends State<SubwayScreen> {
         child: Column(
           children: [
             const SizedBox(
-              height: 80,
+              height: 40,
             ),
             Center(
               child: ElevatedButton(
