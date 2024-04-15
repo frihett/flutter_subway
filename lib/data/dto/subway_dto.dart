@@ -1,35 +1,36 @@
 class SubwayDto {
   SubwayDto({
-      this.beginRow, 
-      this.endRow, 
-      this.curPage, 
-      this.pageRow, 
-      this.totalCount, 
-      this.rowNum, 
-      this.selectedCount, 
-      this.subwayId, 
-      this.subwayNm, 
-      this.updnLine, 
-      this.trainLineNm, 
-      this.subwayHeading, 
-      this.statnFid, 
-      this.statnTid, 
-      this.statnId, 
-      this.statnNm, 
-      this.trainCo, 
-      this.trnsitCo, 
-      this.ordkey, 
-      this.subwayList, 
-      this.statnList, 
-      this.btrainSttus, 
-      this.barvlDt, 
-      this.btrainNo, 
-      this.bstatnId, 
-      this.bstatnNm, 
-      this.recptnDt, 
-      this.arvlMsg2, 
-      this.arvlMsg3, 
-      this.arvlCd,});
+    this.beginRow,
+    this.endRow,
+    this.curPage,
+    this.pageRow,
+    this.totalCount,
+    this.rowNum,
+    this.selectedCount,
+    this.subwayId,
+    this.subwayNm,
+    this.updnLine,
+    this.trainLineNm,
+    this.subwayHeading,
+    this.statnFid,
+    this.statnTid,
+    this.statnId,
+    this.statnNm,
+    this.trainCo,
+    this.trnsitCo,
+    this.ordkey,
+    this.subwayList,
+    this.statnList,
+    this.btrainSttus,
+    this.barvlDt,
+    this.btrainNo,
+    this.bstatnId,
+    this.bstatnNm,
+    this.recptnDt,
+    this.arvlMsg2,
+    this.arvlMsg3,
+    this.arvlCd,
+  });
 
   SubwayDto.fromJson(dynamic json) {
     beginRow = json['beginRow'];
@@ -63,6 +64,7 @@ class SubwayDto {
     arvlMsg3 = json['arvlMsg3'];
     arvlCd = json['arvlCd'];
   }
+
   dynamic beginRow;
   dynamic endRow;
   dynamic curPage;
@@ -128,5 +130,4 @@ class SubwayDto {
     map['arvlCd'] = arvlCd;
     return map;
   }
-
 }

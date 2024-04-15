@@ -4,7 +4,6 @@ part 'subway.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Subway {
-
   int beginRow;
   int endRow;
   int curPage;
@@ -35,7 +34,6 @@ class Subway {
   String arvlMsg2;
   String arvlMsg3;
   String arvlCd;
-
 
   factory Subway.fromJson(Map<String, dynamic> json) => _$SubwayFromJson(json);
 
@@ -75,44 +73,41 @@ class Subway {
     required this.arvlCd,
   });
 
-
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          (other is Subway &&
-              runtimeType == other.runtimeType &&
-              beginRow == other.beginRow &&
-              endRow == other.endRow &&
-              curPage == other.curPage &&
-              pageRow == other.pageRow &&
-              totalCount == other.totalCount &&
-              rowNum == other.rowNum &&
-              selectedCount == other.selectedCount &&
-              subwayId == other.subwayId &&
-              subwayNm == other.subwayNm &&
-              updnLine == other.updnLine &&
-              trainLineNm == other.trainLineNm &&
-              subwayHeading == other.subwayHeading &&
-              statnFid == other.statnFid &&
-              statnTid == other.statnTid &&
-              statnId == other.statnId &&
-              statnNm == other.statnNm &&
-              trainCo == other.trainCo &&
-              trnsitCo == other.trnsitCo &&
-              ordkey == other.ordkey &&
-              subwayList == other.subwayList &&
-              statnList == other.statnList &&
-              btrainSttus == other.btrainSttus &&
-              barvlDt == other.barvlDt &&
-              btrainNo == other.btrainNo &&
-              bstatnId == other.bstatnId &&
-              bstatnNm == other.bstatnNm &&
-              recptnDt == other.recptnDt &&
-              arvlMsg2 == other.arvlMsg2 &&
-              arvlMsg3 == other.arvlMsg3 &&
-              arvlCd == other.arvlCd
-          );
-
+      (other is Subway &&
+          runtimeType == other.runtimeType &&
+          beginRow == other.beginRow &&
+          endRow == other.endRow &&
+          curPage == other.curPage &&
+          pageRow == other.pageRow &&
+          totalCount == other.totalCount &&
+          rowNum == other.rowNum &&
+          selectedCount == other.selectedCount &&
+          subwayId == other.subwayId &&
+          subwayNm == other.subwayNm &&
+          updnLine == other.updnLine &&
+          trainLineNm == other.trainLineNm &&
+          subwayHeading == other.subwayHeading &&
+          statnFid == other.statnFid &&
+          statnTid == other.statnTid &&
+          statnId == other.statnId &&
+          statnNm == other.statnNm &&
+          trainCo == other.trainCo &&
+          trnsitCo == other.trnsitCo &&
+          ordkey == other.ordkey &&
+          subwayList == other.subwayList &&
+          statnList == other.statnList &&
+          btrainSttus == other.btrainSttus &&
+          barvlDt == other.barvlDt &&
+          btrainNo == other.btrainNo &&
+          bstatnId == other.bstatnId &&
+          bstatnNm == other.bstatnNm &&
+          recptnDt == other.recptnDt &&
+          arvlMsg2 == other.arvlMsg2 &&
+          arvlMsg3 == other.arvlMsg3 &&
+          arvlCd == other.arvlCd);
 
   @override
   int get hashCode =>
@@ -146,7 +141,6 @@ class Subway {
       arvlMsg2.hashCode ^
       arvlMsg3.hashCode ^
       arvlCd.hashCode;
-
 
   @override
   String toString() {
@@ -183,7 +177,6 @@ class Subway {
         ' arvlCd: $arvlCd,' +
         '}';
   }
-
 
   Subway copyWith({
     int? beginRow,
@@ -250,7 +243,6 @@ class Subway {
       arvlCd: arvlCd ?? this.arvlCd,
     );
   }
-
 
   Map<String, dynamic> toMap() {
     return {
@@ -321,7 +313,6 @@ class Subway {
       arvlCd: map['arvlCd'] as String,
     );
   }
-
 
 //</editor-fold>
 }
