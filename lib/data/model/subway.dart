@@ -3,8 +3,8 @@ import 'package:json_annotation/json_annotation.dart';
 part 'subway.g.dart';
 
 @JsonSerializable(explicitToJson: true)
-
 class Subway {
+
   int? beginRow;
   int? endRow;
   int? curPage;

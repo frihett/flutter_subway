@@ -42,10 +42,13 @@ class _SubwayScreenState extends State<SubwayScreen> {
             ),
           ),
           ...viewModel.subways.map(
+
             (e) => Text(e.statnNm!),
+
           ),
         ],
       ),
     );
   }
 }
+
