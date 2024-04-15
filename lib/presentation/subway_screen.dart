@@ -49,8 +49,8 @@ class _SubwayScreenState extends State<SubwayScreen> {
                 ),
                 child: const Text(
                   '가져오기',
-                  style:
-                      TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
