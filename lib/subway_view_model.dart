@@ -7,10 +7,9 @@ class SubwayViewModel with ChangeNotifier {
   //ChangeNotifier Setstate 편하게 쓰라는 위젯
   final SubwayRepository _subwayRepository;
 
-  SubwayViewModel(
-      {required SubwayRepository subwayRepository,
-        })
-      : _subwayRepository = subwayRepository;
+  SubwayViewModel({
+    required SubwayRepository subwayRepository,
+  }) : _subwayRepository = subwayRepository;
 
   List<Subway> _subways = [];
 
