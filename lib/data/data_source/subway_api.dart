@@ -17,10 +17,3 @@ class SubwayApi {
     }
   }
 }
-
-void main() async {
-  SubwayApi subwayApi = SubwayApi();
-  List<dynamic> result = await subwayApi.getSubwayList();
-
-  print(result);
-}
