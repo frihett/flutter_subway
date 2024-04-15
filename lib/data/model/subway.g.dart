@@ -1,0 +1,73 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'subway.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+Subway _$SubwayFromJson(Map<String, dynamic> json) => Subway(
+      beginRow: json['beginRow'] as int?,
+      endRow: json['endRow'] as int?,
+      curPage: json['curPage'] as int?,
+      pageRow: json['pageRow'] as int?,
+      totalCount: json['totalCount'] as num?,
+      rowNum: json['rowNum'] as num?,
+      selectedCount: json['selectedCount'] as num?,
+      subwayId: json['subwayId'] as String?,
+      subwayNm: json['subwayNm'] as int?,
+      updnLine: json['updnLine'] as String?,
+      trainLineNm: json['trainLineNm'] as String?,
+      subwayHeading: json['subwayHeading'] as int?,
+      statnFid: json['statnFid'] as String?,
+      statnTid: json['statnTid'] as String?,
+      statnId: json['statnId'] as String?,
+      statnNm: json['statnNm'] as String?,
+      trainCo: json['trainCo'] as int?,
+      trnsitCo: json['trnsitCo'] as String?,
+      ordkey: json['ordkey'] as String?,
+      subwayList: json['subwayList'] as String?,
+      statnList: json['statnList'] as String?,
+      btrainSttus: json['btrainSttus'] as String?,
+      barvlDt: json['barvlDt'] as String?,
+      btrainNo: json['btrainNo'] as String?,
+      bstatnId: json['bstatnId'] as String?,
+      bstatnNm: json['bstatnNm'] as String?,
+      recptnDt: json['recptnDt'] as String?,
+      arvlMsg2: json['arvlMsg2'] as String?,
+      arvlMsg3: json['arvlMsg3'] as String?,
+      arvlCd: json['arvlCd'] as String?,
+    );
+
+Map<String, dynamic> _$SubwayToJson(Subway instance) => <String, dynamic>{
+      'beginRow': instance.beginRow,
+      'endRow': instance.endRow,
+      'curPage': instance.curPage,
+      'pageRow': instance.pageRow,
+      'totalCount': instance.totalCount,
+      'rowNum': instance.rowNum,
+      'selectedCount': instance.selectedCount,
+      'subwayId': instance.subwayId,
+      'subwayNm': instance.subwayNm,
+      'updnLine': instance.updnLine,
+      'trainLineNm': instance.trainLineNm,
+      'subwayHeading': instance.subwayHeading,
+      'statnFid': instance.statnFid,
+      'statnTid': instance.statnTid,
+      'statnId': instance.statnId,
+      'statnNm': instance.statnNm,
+      'trainCo': instance.trainCo,
+      'trnsitCo': instance.trnsitCo,
+      'ordkey': instance.ordkey,
+      'subwayList': instance.subwayList,
+      'statnList': instance.statnList,
+      'btrainSttus': instance.btrainSttus,
+      'barvlDt': instance.barvlDt,
+      'btrainNo': instance.btrainNo,
+      'bstatnId': instance.bstatnId,
+      'bstatnNm': instance.bstatnNm,
+      'recptnDt': instance.recptnDt,
+      'arvlMsg2': instance.arvlMsg2,
+      'arvlMsg3': instance.arvlMsg3,
+      'arvlCd': instance.arvlCd,
+    };
