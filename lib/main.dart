@@ -36,6 +36,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class MaterialApp {
+}
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
