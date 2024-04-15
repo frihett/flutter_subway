@@ -33,22 +33,64 @@ class _SubwayScreenState extends State<SubwayScreen> {
       appBar: AppBar(
         title: const Text('Subway 리스트'),
       ),
-      body: Column(
-        children: [
-          Center(
-            child: ElevatedButton(
-              onPressed: () => viewModel.fetchSubways(),
-              child: const Text('가져오기'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 80,
             ),
-          ),
-          ...viewModel.subways.map(
-
-            (e) => Text(e.statnNm!),
-
-          ),
-        ],
+            Center(
+              child: ElevatedButton(
+                onPressed: () => viewModel.fetchSubways(),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    const Color(0xFF00A3FF),
+                  ),
+                ),
+                child: const Text(
+                  '가져오기',
+                  style:
+                      TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            ...viewModel.subways.map(
+              (e) => Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    Text(
+                      e.statnNm,
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF282828),
+                      ),
+                    ),
+                    Text(
+                      e.trainLineNm,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        color: Color(0xFF282828),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 24,
+                    ),
+                    const Divider(
+                      height: 2,
+                      color: Color(0xFFF5F5F5),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-

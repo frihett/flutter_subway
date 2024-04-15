@@ -5,36 +5,36 @@ part 'subway.g.dart';
 @JsonSerializable(explicitToJson: true)
 class Subway {
 
-  int? beginRow;
-  int? endRow;
-  int? curPage;
-  int? pageRow;
-  num? totalCount;
-  num? rowNum;
-  num? selectedCount;
-  String? subwayId;
-  int? subwayNm;
-  String? updnLine;
-  String? trainLineNm;
-  int? subwayHeading;
-  String? statnFid;
-  String? statnTid;
-  String? statnId;
-  String? statnNm;
-  int? trainCo;
-  String? trnsitCo;
-  String? ordkey;
-  String? subwayList;
-  String? statnList;
-  String? btrainSttus;
-  String? barvlDt;
-  String? btrainNo;
-  String? bstatnId;
-  String? bstatnNm;
-  String? recptnDt;
-  String? arvlMsg2;
-  String? arvlMsg3;
-  String? arvlCd;
+  int beginRow;
+  int endRow;
+  int curPage;
+  int pageRow;
+  num totalCount;
+  num rowNum;
+  num selectedCount;
+  String subwayId;
+  int subwayNm;
+  String updnLine;
+  String trainLineNm;
+  int subwayHeading;
+  String statnFid;
+  String statnTid;
+  String statnId;
+  String statnNm;
+  int trainCo;
+  String trnsitCo;
+  String ordkey;
+  String subwayList;
+  String statnList;
+  String btrainSttus;
+  String barvlDt;
+  String btrainNo;
+  String bstatnId;
+  String bstatnNm;
+  String recptnDt;
+  String arvlMsg2;
+  String arvlMsg3;
+  String arvlCd;
 
 
   factory Subway.fromJson(Map<String, dynamic> json) => _$SubwayFromJson(json);
@@ -47,32 +47,32 @@ class Subway {
     required this.endRow,
     required this.curPage,
     required this.pageRow,
-    this.totalCount,
-    this.rowNum,
-    this.selectedCount,
-    this.subwayId,
+    required this.totalCount,
+    required this.rowNum,
+    required this.selectedCount,
+    required this.subwayId,
     required this.subwayNm,
-    this.updnLine,
-    this.trainLineNm,
+    required this.updnLine,
+    required this.trainLineNm,
     required this.subwayHeading,
-    this.statnFid,
-    this.statnTid,
-    this.statnId,
-    this.statnNm,
+    required this.statnFid,
+    required this.statnTid,
+    required this.statnId,
+    required this.statnNm,
     required this.trainCo,
-    this.trnsitCo,
-    this.ordkey,
-    this.subwayList,
-    this.statnList,
-    this.btrainSttus,
-    this.barvlDt,
-    this.btrainNo,
-    this.bstatnId,
-    this.bstatnNm,
-    this.recptnDt,
-    this.arvlMsg2,
-    this.arvlMsg3,
-    this.arvlCd,
+    required this.trnsitCo,
+    required this.ordkey,
+    required this.subwayList,
+    required this.statnList,
+    required this.btrainSttus,
+    required this.barvlDt,
+    required this.btrainNo,
+    required this.bstatnId,
+    required this.bstatnNm,
+    required this.recptnDt,
+    required this.arvlMsg2,
+    required this.arvlMsg3,
+    required this.arvlCd,
   });
 
 
